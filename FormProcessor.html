@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Form Processor</title>
+</head>
+<body>
+<script type="text/javascript">
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+document.write("<h1>Your form has been submitted!</h1><h2>You entered the following data:</h2>");
+var formData = location.search;
+
+formData = formData.substring(1, formData.length);
+while (formData.indexOf("+") != -1) {
+	formData = formData.replace("+", " ");
+}
+formData = unescape(formData);
+var formArray = formData.split("&");
+for (var i=0; i < formArray.length; ++i) {
+	document.writeln(formArray[i] + "<br />");
+}
+
+document.write("<h3>Please made the payment via Paynow or BankTrf</h3>");
+document.write("<h4>Paynow: xxxxxxxx</h4>");
+document.write("<h4>Bank Acc: xxxxxxxx</h4>");
+// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+</script>
+</body>
+</html>

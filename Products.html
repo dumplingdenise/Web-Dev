@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Paw Ohana</title>
+    <link rel="icon" href="Media/Header/Logo.jpg">
+    <link rel="stylesheet" type="text/css" href="Header.css">
+    <link rel="stylesheet" href="Main.css">
+    <script src="Main.js"></script>
+    <script src="Cart.js" async></script>
+  </head>
+  <body onload = "filterSelection('all')">
+    <!-- Header & Navigation codes -->
+    <header>
+      <div class="wrapper">
+        <a href="Home.html" ><img src="Media/Header/Logo.jpg" alt="Logo" id="logo"></a>
+      </div>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#" class="current">Products</a></li>
+            <li><a href="Pawkery.html" class="border">Pawkery</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="Login.html" class="border" >Login</a></li>
+            <!-- <li><a href="Cart.html"><img src="Media/Header/cart.png" alt="cart"></a></li>
+            <li><a href="#"><img src="Media/Header/search.png" alt="Search"></a></li> -->
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Products filtering & shopping cards codes -->
+
+      <div class="myBtnContainer">
+        <button class="Filterbtn" onclick="filterSelection('all')" autofocus>All Products</button>
+        <button class="Filterbtn" onclick="filterSelection('dogs')">For Dogs</button>
+        <button class="Filterbtn" onclick="filterSelection('cats')">For Cats</button>
+        <button class="Filterbtn" onclick="filterSelection('smallPets')">For Small Pets</button>
+      </div>
+
+      <div class="productsContainer">
+        <div class="Products-rows">
+          <div class="filterDiv dogs">
+            <div class="card">
+              <img class="shop-item-image"src="Media/dogs clothes.jpeg" alt="dogs apparel" >
+              <h3 class="shop-item-title">Dogs Apparel</h3>
+              <p class="shop-item-price">S$39.90</p>
+              <p class="shop-item-description">Description</p>
+              <p><button type="button" class="Cbtn shop-item-button">Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="filterDiv dogs">
+            <div class="card">
+              <img class="shop-item-image"src="Media/dogs collar.jpg" alt="dogs accessories">
+              <h3 class="shop-item-title">Dogs accessories</h3>
+              <p class="shop-item-price">S$19.90</p>
+              <p class="shop-item-description">Description</p>
+              <p><button  type="button" class="Cbtn shop-item-button">Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="filterDiv dogs">
+            <div class="card">
+              <img class="shop-item-image"src="Media/dogs toy.jpg" alt="dogs toys" >
+              <h3 class="shop-item-title">Dogs Plush Toys</h3>
+              <p class="shop-item-price">S$25.90</p>
+              <p class="shop-item-description">Description</p>
+              <p><button type="button" class="Cbtn shop-item-button">Add to Cart</button></p>
+            </div>
+          </div>
+
+          <div class="filterDiv cats">
+            <div class="card">
+              <img class="shop-item-image" src="Media/Cats accessories.jpeg" alt="cats accessories" >
+              <h3 class="shop-item-title">Cats Soft Bed</h3>
+              <p class="shop-item-price">S$59.90</p>
+              <p class="shop-item-description">Description</p>
+              <p><button  type="button" class="Cbtn shop-item-button">Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="filterDiv cats">
+            <div class="card">
+              <img class="shop-item-image"src="Media/cats treats.jpeg" alt="cats treats" >
+              <h3 class="shop-item-title">Cats Treats</h3>
+              <p class="shop-item-price">S$15.90</p>
+              <p class="shop-item-description">Description</p>
+              <p><button  type="button" class="Cbtn shop-item-button">Add to Cart</button></p>
+            </div>
+          </div>
+
+          <div class="filterDiv smallPets">
+            <div class="card">
+              <img class="shop-item-image"src="Media/small pets accessories.jpeg" alt="small pets accessories" >
+              <h3 class="shop-item-title">Small Pets Food Bowl</h3>
+              <p class="shop-item-price">S$19.90</p>
+              <p class="shop-item-description">Description</p>
+              <p><button type="button" class="Cbtn shop-item-button">Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="filterDiv smallPets">
+            <div class="card">
+              <img class="shop-item-image"src="Media/small pets toy.png" alt="small pets toy">
+              <h3 class="shop-item-title">Small Pets Toys</h3>
+              <p class="shop-item-price">S$29.90</p>
+              <p class="shop-item-description">Description</p>
+              <p><button type="button" class="Cbtn shop-item-button">Add to Cart</button></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <section class="Cartcontainer">
+          <h2 class="section-header">CART</h2>
+          <div class="cart-row">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-description cart-header cart-column">Description</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items">
+          </div>
+          <div class="cart-total">
+              <strong class="cart-total-title">Total</strong>
+              <span class="cart-total-price">$0</span>
+          </div>
+          <button class="Cbtn btn-purchase" type="button">PURCHASE</button>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Shippiing</a></li>
+                <li><a href="#">Return Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Company Info</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Pawkery</a></li>
+                <li><a href="#">Brands</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Connect With Us</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/wagatail.sg/"><img src="Media/Facebook Logo.png" alt=""></a>
+                <a href="https://www.instagram.com/wagatail.sg/"><img src="Media/Instagram Logo.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="copyright">Copyright &copy; 2019. All Rights Reserved.</div>
+      </footer>
+
+  </body>
+</html>

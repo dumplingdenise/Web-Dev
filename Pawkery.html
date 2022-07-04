@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Paw Ohana</title>
+    <link rel="icon" href="Media/Header/Logo.jpg">
+    <link rel="stylesheet" type="text/css" href="Header.css">
+    <link rel="stylesheet" href="Main.css">
+    <script src="Main.js"></script>
+    <!-- <script src="Cart.js" async></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <a href="Home.html" ><img src="Media/Header/Logo.jpg" alt="Logo" id="logo"></a>
+      </div>
+
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="#" class="border current">Pawkery</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="Login.html" class="border" >Login</a></li>
+            <!-- <li><a href="Cart.html"><img src="Media/Header/cart.png" alt="cart"></a></li>
+            <li><a href="#"><img src="Media/Header/search.png" alt="Search"></a></li> -->
+          </ul>
+        </nav>
+
+    </header>
+
+    <div class="Pawkery-tagline">
+      <h2>Freshly baked treats for your furbabies</h2>
+      <p>For any occasion &#10084;</p>
+    </div>
+
+    <table border="1" class="table-css">
+      <tr>
+        <th></th>
+        <th>Timing</th>
+        <th>Delivery Fee</th>
+        <th>Pickup Address</th>
+        <th>**Notes**</th>
+      </tr>
+
+      <tr>
+        <th>Delivery</th>
+        <td>1pm - 5pm <span>Daily</span> </td>
+        <td><span>$4 for small bakery</span> <br> [cookies & treats etc.] <br> <span>$15 per cake delivery</span> <br> <span>free for orders above $80.</span></td>
+        <td> - </td>
+        <td rowspan="2"> <span>Order 3 days in advance!</span></td>
+      </tr>
+
+      <tr>
+        <th>Self-Pickup</th>
+        <td><span>Mon - Thurs:</span> 1pm - 6pm <br> <span>Fri-Sun:</span>  11am - 1pm & 4pm - 6pm</td>
+        <td> - </td>
+        <td>53 Ang Mo Kio Ave 3, Singapore 569933</td>
+      </tr>
+
+    </table>
+    <div class="Pawkery-row">
+
+      <div class="Pawkery-column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="Cake-card ">
+              <img src="Media/dogs birthday cake.jpg" alt="cake">
+              <h3>Birthday cake</h3>
+              <p class="price">S$40.00</p>
+              <p>*Hover to flip for details</p>
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Product Details</h3>
+              <p>Ingredient used:</p>
+              <div class="list-css">
+                <ul>
+                  <li>honey</li>
+                  <li>eggs</li>
+                  <li>choice of meat</li>
+                  <li>flour</li>
+                  <li>sprinkles</li>
+                </ul>
+              </div>
+
+              <p>shelf life: 2 days</p>
+
+              <p><button class="open-button" onclick="openForm_Meat()">Order Now!</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Pawkery-column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="Cake-card ">
+              <img src="Media/Bunny macaron.png" alt="cake">
+              <h3>Bunny Macarons</h3>
+              <p class="price">S$6.50</p>
+              <p>*Hover to flip for details</p>
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Product Details</h3>
+              <p>5 Pieces per box</p>
+              <p>Ingredient used:</p>
+              <div class="list-css">
+                <ul>
+                  <li>Rabbit pallets</li>
+                  <li>Rabbit hay</li>
+                  <li>Choice of flavour</li>
+                </ul>
+              </div>
+
+              <p>shelf life: 2 days</p>
+
+              <p><button class="open-button" onclick="openForm_Veg()">Order Now!</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Pawkery-column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="Cake-card ">
+              <img src="Media/Bunny macaron.png" alt="cake">
+              <h3>Bunny Macarons</h3>
+              <p class="price">S$6.50</p>
+              <p>*Hover to flip for details</p>
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Product Details</h3>
+              <p>5 Pieces per box</p>
+              <p>Ingredient used:</p>
+              <div class="list-css">
+                <ul>
+                  <li>Rabbit pallets</li>
+                  <li>Rabbit hay</li>
+                  <li>Choice of flavour</li>
+                </ul>
+              </div>
+
+              <p>shelf life: 2 days</p>
+
+              <p><button class="open-button" onclick="openForm_Veg()">Order Now!</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="modal" id="dog-cat-Modal">
+      <div class="order-content">
+        <form action="FormProcessor.html" method="get">
+          <div class="order-title"><h2>Order Form</h2></div>
+          <div class="input">
+            <label for="meat">Choice of meat:</label>
+            <select class="boxStyle" name="meat">
+              <option value="Chicken">Chicken</option>
+              <option value="Pork">Pork</option>
+              <option value="Beef">Beef</option>
+              <option value="Salmon">Salmon</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <label for="shape">Shape:</label>
+            <select class="boxStyle" name="shape">
+              <option value="-"selected>-</option>
+              <option value="Paw Print">Paw</option>
+              <option value="Bone Print">Bone</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <label for="size">Size:</label>
+            <select class="boxStyle" name="size">
+              <option value="4 Inch">4 Inch</option>
+              <option value="5 Inch">5 Inch</option>
+              <option value="6 Inch">6 Inch</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <label for="color">Base color:</label>
+            <select class="boxStyle" name="color">
+              <option value="Cream">Cream</option>
+              <option value="Brown">Brown</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <label for="secondColor">Secondary color:</label>
+            <select class="boxStyle" name="secondColor">
+              <option value="Brown">Brown</option>
+              <option value="Cream">Cream</option>
+              <option value="Lavendar">Lavendar</option>
+              <option value="Light blue">Light Blue</option>
+              <option value="Pink">Pink</option>
+              <option value="Green">Green</option>
+              <option value="Yellow">Yello</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <label for="message">Message:</label>
+            <textarea class="textboxStyle" name="message" placeholder="Eg. Happy Birthday Dumpling!"></textarea>
+          </div>
+
+          <div class="input">
+            <label for="candles">Number of big/small candles (optional):</label>
+            <input class="textboxStyle" type="text" name="candles" placeholder="Eg. 1 Big">
+          </div>
+          <button class="Orderbtn">Order</button>
+        </form>
+        <!-- <button class = "btncancel" onclick="closeForm()">Close</button> -->
+      </div>
+    </div>
+
+    <div class="modal" id="Rabbit-Modal">
+      <div class="order-content">
+        <form action="FormProcessor.html" method="get">
+          <div class="order-title"><h2>Order Form</h2></div>
+          <div class="input">
+            <label for="flavour">Choice of flavour:</label>
+            <select id="rabbit-input" name="flavour">
+              <option value="Strawberry & Banana">Strawberry & Banana</option>
+              <option value="Blueberry & Apple">Blueberry & Apple</option>
+              <option value="Mixed Berries">Mixed Berries</option>
+              <option value="Peach & Mango">Peach & Mango</option>
+              <option value="Carrots & Broccoli">Carrots & Broccoli</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <label for="shape">Shape:</label>
+            <select class="boxStyle" name="shape">
+              <option value="-"selected>-</option>
+              <option value="Heart Shape">Heart Shape</option>
+              <option value="Carrot Shape">Carrot Shape</option>
+              <option value="Round">Round</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <label for="candles">Number of big/small candles (optional):</label>
+            <input class="textboxStyle" type="text" name="candles" placeholder="Eg. 1 Big">
+          </div>
+          <button class="Orderbtn">Order</button>
+
+        </form>
+        <!-- <button class = "btncancel" onclick="closeForm()">Close</button> -->
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+              <li><a href="#">Shippiing</a></li>
+              <li><a href="#">Return Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company Info</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Pawkery</a></li>
+              <li><a href="#">Brands</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Connect With Us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/wagatail.sg/"><img src="Media/Facebook Logo.png" alt=""></a>
+              <a href="https://www.instagram.com/wagatail.sg/"><img src="Media/Instagram Logo.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">Copyright &copy; 2019. All Rights Reserved.</div>
+    </footer>
+  </body>
+</html>

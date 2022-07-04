@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Paw Ohana</title>
+    <link rel="icon" href="Media/Header/Logo.jpg">
+    <link rel="stylesheet" type="text/css" href="Header.css">
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <script type="text/javascript" type="text/javascript" src="Main.js"></script>
+    <script type="text/javascript" src="Cart.js" async></script>
+    <script type="text/javascript" src="LocalStorage.js">
+
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <div class="wrapper">
+        <a href="Home.html" ><img src="Media/Header/Logo.jpg" alt="Logo" id="logo"></a>
+      </div>
+
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Pawkery.html" class="border">Pawkery</a></li>
+            <li><a href="#" class="current">Register</a></li>
+            <li><a href="Login.html" class="border" >Login</a></li>
+            <!-- <li><a href="Cart.html"><img src="Media/Header/cart.png" alt="cart"></a></li>
+            <li><a href="#"><img src="Media/Header/search.png" alt="Search"></a></li> -->
+          </ul>
+        </nav>
+
+    </header>
+
+    <div class="form-body">
+      <div class="regform-container">
+        <div class="title">Create an account</div>
+        <div class="content">
+          <form class="" name="regform" onsubmit="return CheckInput()">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">First Name</span>
+                <input name="InputFName" id="InputFName" type="text" placeholder="Enter your first name" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Last Name</span>
+                <input name="InputLName" id="InputLName" type="text" placeholder="Enter your last name" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input name="InputEmail" id="InputEmail" type="email" placeholder="Enter your email" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input name="InputPW" id="InputPW" type="password" placeholder="Enter your password" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input name="InputCfmPW" id="InputCfmPW" type="password" placeholder="Confirm your password" required>
+                <span id='message'></span>
+              </div>
+            </div>
+              <div class="Reg-button" >
+                <input type="submit" value="Register">
+              </div>
+
+              <div class="login-signup-link">Already a member? <a href="Login.html">Login now</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+              <li><a href="#">Shippiing</a></li>
+              <li><a href="#">Return Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company Info</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Pawkery</a></li>
+              <li><a href="#">Brands</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Connect With Us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/wagatail.sg/"><img src="Media/Facebook Logo.png" alt=""></a>
+              <a href="https://www.instagram.com/wagatail.sg/"><img src="Media/Instagram Logo.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">Copyright &copy; 2019. All Rights Reserved.</div>
+    </footer>
+
+  </body>
+</html>
